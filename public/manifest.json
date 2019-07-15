@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Airtable Attendance Form",
+  "author": "Seth Lachman",
+  "version": "0.1",
+  "description": "Fill out your attendance forms faster!",
+  "browser_action": {
+    "default_title": "Airtable Attendance Form",
+    "default_popup": "index.html"
+  },
+  "permissions": ["storage"]
+}
