@@ -1,5 +1,4 @@
 import React from "react";
-// this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core";
 import StudentInputs from "./StudentInputs";
@@ -68,7 +67,7 @@ class Form extends React.Component {
           <StudentInputs handleChange={this.handleChange} students={students} />
         </div>
         <div>
-          <button>Store Values</button>
+          <button type="submit">Store Values</button>
         </div>
       </form>
     );
@@ -93,7 +92,8 @@ class Form extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const { student, students } = this.state;
+
+    localStorage.setItem(this.state);
   };
 }
 

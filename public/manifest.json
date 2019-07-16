@@ -8,5 +8,11 @@
     "default_title": "Airtable Attendance Form",
     "default_popup": "index.html"
   },
-  "permissions": ["storage"]
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://airtable.com/shrEawWXvMldYbm5Q"],
+      "js": ["./attendance.js"]
+    }
+  ]
 }
