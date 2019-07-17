@@ -92,8 +92,8 @@ class Form extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
-    localStorage.setItem(this.state);
+    console.log(this.state);
+    // localStorage.setItem(this.state);
   };
 }
 
